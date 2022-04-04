@@ -1,0 +1,12 @@
+# 開発中しか使わない
+version: '3'
+
+services:
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+    ports:
+      - "80:80"
