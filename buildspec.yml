@@ -15,6 +15,6 @@ phases:
       commands:
         - echo Build completed on `date`
         - docker push $IMAGE
-        - printf '{"Version":"1.0","ImageURI":"%s"}' $EMAGE > imagedefinitions.json
+        - printf '{"name":"sample-app","ImageURI":"%s"}' $EMAGE > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
