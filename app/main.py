@@ -17,4 +17,4 @@ def read_item(item_id: int, q: Optional[str] = None):
 
 @app.get("/api/sample")
 def return_sample():
-    return {"sample": "tmp"}
+    return {"sample": "tmpo"}
