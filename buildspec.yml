@@ -17,4 +17,4 @@ phases:
         - docker push $IMAGE
         - printf '{"Version":"1.0","ImageURI":"%s"}' $EMAGE > imagedefinitions.json
 artifacts:
-  files: imagedefinitions
+  files: imagedefinitions.json
