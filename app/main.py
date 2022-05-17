@@ -5,6 +5,11 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
+@app.get("/")
+def check_helth():
+    return {"Health": "Ok"}
+
+
 @app.get("/api/")
 def read_root():
     return {"Hello": "World"}
