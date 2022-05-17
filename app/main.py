@@ -18,3 +18,7 @@ def read_item(item_id: int, q: Optional[str] = None):
 @app.get("/api/sample")
 def return_sample():
     return {"sample": "tmporary"}
+
+@app.get("api/twice/{num}")
+def return_twice_number(num: int):
+    return {"value": num*2}
